@@ -51,7 +51,7 @@
 
     <!-- Audio Player -->
     <audio controls style="width:100%;">
-        <source src="audio/kim voice x dee breezy-waambie.m4a" type="audio/mpeg" />
+        <source src="audio/kim voice x dee breezy-waambie.MP3" type="audio/mpeg" />
         Your browser does not support the audio element.x  
     </audio>
 
@@ -65,10 +65,10 @@
 document.getElementById('downloadAll').addEventListener('click', async () => {
     const zip = new JSZip();
 
-    const mp3Data = await fetch('kim voice x dee breezy- waambie mp3.m4a').then(r => r.arrayBuffer());
+    const mp3Data = await fetch('audio/kim voice x dee breezy-waambie.MP3').then(r => r.arrayBuffer());
   
 
-    zip.file('kim voice- waambie.mp3', mp3Data);
+    zip.file('kim voice x dee breezy-waambie.MP3', mp3Data);
     
 
     const blob = await zip.generateAsync({ type: 'blob' });
@@ -99,7 +99,7 @@ document.getElementById('downloadAll').addEventListener('click', async () => {
     
     
     
-    <a href="juma.html"<h3 style="font-size: 20px; margin:10px 0;color: #000;">CTG Harmaton- Enjo</h3>
+    <a href="Moramz ft Dogo elisha - umbea.html"<h3 style="font-size: 20px; margin:10px 0;color: #000;text-decoration: none;">moramz ft dogo elisha- umbea</h3>
 </a>
    
 
