@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Barakah The Prince - Mwanetu | Kellash Music</title>
+  <meta name="description" content="Sikiliza na pakua nyimbo ya Barakah The Prince - Mwanetu - kupitia Kellash Music. Music Tanzania | Download MP3.">
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Barakah The Prince - Mwanetu, Kellash Music, Tanzania Music, Download, New Song">
+<meta property="og:title" content=" Barakah The Prince - Mwanetu | Kellash Music">
+<meta property="og:description" content="Sikiliza na pakua nyimbo ya Barakah The Prince - Mwanetu kupitia Kellash Music.">
+<meta property="og:image" content="https://kellashstudiotanzania.netlify.app/images/">
+<meta property="og:url" content="https://kellashstudiotanzania.netlify.app/Barakah The Prince - Mwanetu.html">
+<meta property="og:type" content="music.song">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+      <div class="logo"> kellash music <p class="powered">powered by Kellash Studio</p></div>
+         <ul class="nav-links">
+         <li><a href="index.html">Home</a></li> <br>
+         <li><a href="audio.html">Audio</a></li> <br>
+         <li><a href="singeli.html">Singeli music</a></li> <br>
+         <li><a href="audio.html">Bongoflava</a></li> <br>
+         <li><a href="hiphop.html">Hip-hop/Rap</a></li> <br>
+          <li><a href="album.html">Album/EP</a></li> <br>
+          <li><a href="services.html">services</a></li> <br>
+         <li><a href="join.html">Join us</a></li> <br>
+         <li><a href="contact.html">Contact us</a></li>
+         </ul>
+      <!-- burger menu -->
+      <div class="burger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </header>
+  <center>
+    <P style="color: red;">AUDIO</P>
+    AUDIO | Barakah The Prince - Mwanetu
+  <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+    <img src="images/Barakah-The-Prince-Mwanetu.jpg" alt="Track Cover" style="width:100%; border-radius:10px;" />
+
+    <!-- Jina la track -->
+   <br>
+
+    <!-- Audio Player -->
+    <audio controls style="width:100%;">
+        <source src="audio/Barakah The Prince - Mwanetu.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Download Button -->
+    <button id="downloadAll" style="padding:10px 15px; background-color:#000000; color:white; border:none; border-radius:5px; cursor:pointer; margin-top:10px;">
+    Download 
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.0/jszip.min.js"></script>
+<script>
+document.getElementById('downloadAll').addEventListener('click', async () => {
+    const zip = new JSZip();
+
+    const mp3Data = await fetch('audio/Barakah The Prince - Mwanetu.mp3').then(r => r.arrayBuffer());
+  
+
+    zip.file('Barakah The Prince - Mwanetu.mp3', mp3Data);
+    
+
+    const blob = await zip.generateAsync({ type: 'blob' });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Barakah The Prince - Mwanetu.zip';
+    a.click();
+    URL.revokeObjectURL(url);
+});
+</script>
+
+
+</div> <br>
+    Also you may like:<br>
+   <div class="cardyanyimbo" style="border:1px solid #ccc; padding:15px; width:300px; text-align:center; margin:10px; border-radius:10px;">
+    <!-- Picha ya track -->
+     <a href="fammi-umejaa.html"><img src="images/fammi-umejaa.jpg" alt="Track Cover" style="width:100%; border-radius:10px; text-decoration: none;"/>
+
+    <!-- Jina la track -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <a href="fammi-umejaa.html"<h3 style="font-size: 20px; margin:10px 0;color: #000;text-decoration: none;">Fammi Africa- Umejaa</h3>
+</a>
+   
+
+   
+
+</div>
+
+
+
+
+<!-- ✅ JavaScript -->
+  <script>
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+      // Toggle both burger and nav visibility
+      nav.classList.toggle('nav-active');
+      burger.classList.toggle('toggle');
+    });
+  </script>
+ <!-- Footer -->
+ <footer>
+    <div class="contact-info">
+      For Adverts,sponsorship and partnership,get in touch with
+      <p><strong>Email:</strong> kellashstudiotz@gmail.com</p>
+      <p><strong>Phone:</strong> +255 784-800-125/+255 696-688-332</p>
+      <p><strong>Location:</strong> Dar es Salaam, Tanzania</p>
+    </div>
+    <br>
+      <p>&copy; 2021-2025 KELLASH MUSIC. All rights reserved.</p>
+  </footer>
+  <!-- Fuse.js Library -->
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+<!-- File yako ya JavaScript -->
+<script src="main.js"></script>
